@@ -1,1 +1,1 @@
-# Aplikasi Lowongan Kerja
+# Aplikasi Lowongan Kerja (Frontend)
