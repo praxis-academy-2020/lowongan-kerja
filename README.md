@@ -1,4 +1,4 @@
 # Aplikasi Lowongan Kerja (Frontend)
 
-## Walid Nurudin 
-## Khairun Arkham
+## 1 Walid Nurudin 
+## 2 Khairun Arkham
