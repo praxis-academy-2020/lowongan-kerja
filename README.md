@@ -1,6 +1,4 @@
 # Aplikasi Lowongan Kerja (Frontend)
 
-## Walid Nurudin 
-## Khairun Arkham
-
-#bisa
+## 1 Walid Nurudin 
+## 2 Khairun Arkham
