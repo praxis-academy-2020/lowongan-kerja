@@ -1,4 +1,8 @@
 # lowongan-kerja (Frontend)
 
-## 1. Walid nurudin
-## 2. Khairun arkham
+## 1 Walid Nurudin 
+## 2 Khairun Arkham
+
+# Mentor
+
+## Mas Hendi Suhendi
