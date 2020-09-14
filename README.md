@@ -1,8 +1,24 @@
-# Aplikasi Lowongan Kerja (Frontend)
+# lowongan-kerja
 
-## 1 Walid Nurudin 
-## 2 Khairun Arkham
+## Project setup
+```
+npm install
+```
 
-# Mentor
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## Mas Hendi
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
