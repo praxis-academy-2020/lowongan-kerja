@@ -9,20 +9,20 @@
       </v-container>
     </v-main>
 
-    <v-footer app>
-      <!-- -->
-    </v-footer>
+    <navbarPerusahaan/>
   </v-app>
 </template>
 
 <script>
+import navbarPerusahaan from "@/components/footer"
 export default {
   name: "App",
 
-  components: {},
-
+  components: {navbarPerusahaan
+  },
   data: () => ({
     //
   })
 };
+
 </script>
