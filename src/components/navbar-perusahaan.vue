@@ -8,7 +8,13 @@
 
     <router-link to="/perusahaan">
       <v-btn class="mr-2" outlined>
-        <span>tambah perusahaan</span>
+        <span>beranda</span>
+      </v-btn>
+    </router-link>
+
+    <router-link to="/tambah-lowongan">
+      <v-btn class="mr-2" outlined>
+        <span>tambah lowongan</span>
       </v-btn>
     </router-link>
 

@@ -7,7 +7,6 @@ export default new Vuex.Store({
   state: {
     pelamar: [
       {
-        id: 1,
         nama: 'Walid',
         no_hp: "083010010010",
         email: 'walid@gmail.com',
@@ -17,7 +16,6 @@ export default new Vuex.Store({
     ],
     perusahaan: [
       {
-        id: 1,
         nama: 'Praxis',
         alamat: 'sleman',
         deskripsi: 'blablabla',
