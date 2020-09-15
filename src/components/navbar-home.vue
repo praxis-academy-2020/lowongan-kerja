@@ -1,6 +1,8 @@
 <template>
   <v-app-bar app color="primary" dark>
-    <div class="d-flex align-center">LokerDEV</div>
+    <router-link to="/">
+      <div class="d-flex align-center">LokerDEV</div>
+    </router-link>
 
     <v-spacer></v-spacer>
 

@@ -27,7 +27,7 @@ const routes = [
   },
   {
     path: '/tambah-lowongan',
-    name: 'Perusahaan',
+    name: 'Tambah-lowongan',
     component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/tambah-lowongan.vue')
   },
   {
