@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>pelamar</h1>
+    <h1>Klinik pelamar</h1>
   </div>
 </template>
 
