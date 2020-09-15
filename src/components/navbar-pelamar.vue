@@ -1,16 +1,18 @@
 <template>
   <v-app-bar app color="primary" dark>
-    <div class="d-flex align-center">LokerDEV</div>
+    <router-link to="/">
+      <div class="d-flex align-center">LokerDEV</div>
+    </router-link>
 
     <v-spacer></v-spacer>
 
-    <router-link to="/">
+    <router-link to="/pelamar">
       <v-btn class="mr-2" outlined>
-        <span>Beranda</span>
+        <span>Lowongan</span>
       </v-btn>
     </router-link>
 
-    <router-link to="/klinik-pelamar">
+    <router-link to="/pelamar/klinik-pelamar">
       <v-btn class="mr-2" outlined>
         <span>Klinik pelamar</span>
       </v-btn>
@@ -20,7 +22,7 @@
 
 <script>
 export default {
-  name: 'navbar'
+  name: "navbar"
 };
 </script>
 
