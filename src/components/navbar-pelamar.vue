@@ -4,28 +4,24 @@
 
     <v-spacer></v-spacer>
 
-    <router-link to="/">
+    <router-link to="/beranda">
       <v-btn class="mr-2" outlined>
         <span>Beranda</span>
       </v-btn>
     </router-link>
 
-    <router-link to="/pelamar">
+    <router-link to="/klinik-pelamar">
       <v-btn class="mr-2" outlined>
-        <span>Pelamar</span>
-      </v-btn>
-    </router-link>
-
-    <router-link to="/perusahaan">
-      <v-btn class="mr-2" outlined>
-        <span>Perusahaan</span>
+        <span>Klinik pelamar</span>
       </v-btn>
     </router-link>
   </v-app-bar>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'navbar'
+};
 </script>
 
 <style>
