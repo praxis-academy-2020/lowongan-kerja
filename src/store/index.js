@@ -17,18 +17,33 @@ export default new Vuex.Store({
     perusahaan: [
       {
         nama: 'Praxis',
-        alamat: 'sleman',
+        alamat: 'Sleman',
         deskripsi: 'blablabla',
         lowongan: 'Frontend',
         syarat: 'dibutuhkan yang ganteng'
+      },
+      {
+        nama: 'PT Makmur',
+        alamat: 'Jogja',
+        deskripsi: 'blablabla',
+        lowongan: 'fullstack javascript',
+        syarat: 'minimal lulusan sd'
       }
     ]
   },
 
   mutations: {
+    tambahPerusahaan: function(state, payload){
+        state.perusahaan.push(payload);
+    }
   },
 
   actions: {
+    tambahPerusahaan: function({commit}, payload){
+      commit('tambahPerusahaan', payload);
+      alert('ok')
+      console.log(this.state)
+    }
   },
 
   getters: {

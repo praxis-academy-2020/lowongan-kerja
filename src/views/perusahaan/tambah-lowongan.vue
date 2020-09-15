@@ -8,7 +8,7 @@
       <v-text-field label="Nama lowongan" v-model="form.lowongan" required></v-text-field>
       <v-text-field label="Syarat" v-model="form.syarat" required></v-text-field>
       <v-textarea label="Deskripsi" v-model="form.deskripsi"></v-textarea>
-      <v-btn color="primary">Kirim</v-btn>
+      <v-btn color="primary" @click="save()">Kirim</v-btn>
     </form>
   </div>
 </template>
@@ -27,6 +27,11 @@ export default {
         deskripsi: ""
       }
     };
+  },
+  methods: {
+    save: function(){
+      this.$store.dispatch('tambahPerusahaan', this.form);
+    }
   },
   components: {
     navbarPerusahaan
