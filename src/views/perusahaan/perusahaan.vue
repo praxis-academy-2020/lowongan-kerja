@@ -1,12 +1,17 @@
 <template>
   <div>
+      <navbarPerusahaan/>
       <h1>perusahaan</h1>
   </div>
 </template>
 
 <script>
-export default {
+import navbarPerusahaan from "@/components/navbar-perusahaan"
 
+export default {
+  components: {
+    navbarPerusahaan
+  }
 }
 </script>
 

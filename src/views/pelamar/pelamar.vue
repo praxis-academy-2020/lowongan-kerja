@@ -1,19 +1,19 @@
 <template>
   <div>
-    <navbarPelamar />
-    <h1>Pelamar</h1>
+    <navbarPelamar/>
+    <h1>pelamar</h1>
   </div>
 </template>
 
 <script>
-import navbarPelamar from "../../components/navbar-pelamar.vue";
+// @ is an alias to /src
+import navbarPelamar from "@/components/navbar-pelamar.vue";
+
 
 export default {
-  component: {
+  name: 'Pelamar',
+  components: {
     navbarPelamar
   }
-};
+}
 </script>
-
-<style>
-</style>

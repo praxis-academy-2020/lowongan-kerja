@@ -28,7 +28,7 @@ const routes = [
   {
     path: '/pelamar',
     name: 'Pelamar',
-    component: () => import(/* webpackChunkName: "pelamar" */ '../views/pelamar/pelamar.vue'),
+    component: () => import(/* webpackChunkName: "pelamar" */ '@/views/pelamar/pelamar.vue'),
     children: [
       {
         path: ':id',
