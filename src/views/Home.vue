@@ -9,7 +9,6 @@
 // @ is an alias to /src
 import navbarHome from "../components/navbar-home.vue";
 
-
 export default {
   name: 'Home',
   components: {
