@@ -9,6 +9,7 @@
       <span class="mr-2">Latest Release</span>
       <v-icon>mdi-open-in-new</v-icon>
     </v-btn>
+    <p>home</p>
   </v-app-bar>
 </template>
 
