@@ -26,21 +26,24 @@ const routes = [
     component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/perusahaan.vue')
   },
   {
+    path: '/perusahaan/tambah-edukasi',
+    name: 'Tambah-edukasi',
+    component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/tambah-edukasi.vue')
+  },
+  {
     path: '/pelamar',
     name: 'Pelamar',
     component: () => import(/* webpackChunkName: "pelamar" */ '@/views/pelamar/pelamar.vue'),
-    children: [
-      {
-        path: ':id',
-        name: 'Detail',
-        component: () => import(/* webpackChunkName: "detail" */ '../views/pelamar/detail.vue')
-      },
-      {
-        path: 'klinik-pelamar',
-        name: 'Klinik-pelamar',
-        component: () => import(/* webpackChunkName: "detail" */ '../views/pelamar/klinik-pelamar')
-      }
-    ]
+  },
+  {
+    path: '/pelamar/perusahaan/:id',
+    name: 'Detail',
+    component: () => import(/* webpackChunkName: "detail" */ '../views/pelamar/detail.vue')
+  },
+  {
+    path: '/pelamar/klinik-pelamar',
+    name: 'Klinik-pelamar',
+    component: () => import(/* webpackChunkName: "detail" */ '../views/pelamar/klinik-pelamar')
   }
 ]
 
