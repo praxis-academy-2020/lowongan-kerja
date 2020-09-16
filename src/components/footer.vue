@@ -1,5 +1,5 @@
 <template>
-  <v-footer  color="black">
+  <v-footer  color="primary" class="mt-12">
     <div class="text-center">
       
     <v-row>
@@ -7,7 +7,7 @@
         <v-btn v-for="icon in icons" :key="icon" class="mx-1 white--text" icon>
           <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
-      <v-img src="@/assets/logo/logo1.png" aspect-ratio="2.5"></v-img>  
+      <v-img src="@/assets/logo/logo5.png" aspect-ratio="2.5"></v-img>  
       
       
       </v-col>

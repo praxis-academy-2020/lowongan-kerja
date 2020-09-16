@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 .gmb{
-  color: rgb(27, 233, 27);
+  color:  rgb(49, 236, 49);
   font-size: 22px;
   font-weight: bold;
 }
