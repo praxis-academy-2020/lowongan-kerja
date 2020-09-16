@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    id: 1,
     pelamar: [
       {
         nama: 'Walid',
@@ -16,6 +17,7 @@ export default new Vuex.Store({
     ],
     perusahaan: [
       {
+        id: 0,
         nama: 'Praxis',
         alamat: 'Sleman',
         deskripsi: 'blablabla',
@@ -23,6 +25,7 @@ export default new Vuex.Store({
         syarat: 'dibutuhkan yang ganteng'
       },
       {
+        id: 1,
         nama: 'PT Makmur',
         alamat: 'Jogja',
         deskripsi: 'blablabla',
@@ -33,16 +36,29 @@ export default new Vuex.Store({
   },
 
   mutations: {
+    tambahId: function(state){
+      state.id++
+    },
     tambahPerusahaan: function(state, payload){
         state.perusahaan.push(payload);
+    },
+    hapusPerusahaan: function(state, id){
+      state.perusahaan.splice(id, 1)
     }
   },
 
   actions: {
+    tambahId: function({commit}){
+      commit('tambahId')
+    },
     tambahPerusahaan: function({commit}, payload){
       commit('tambahPerusahaan', payload);
       alert('ok')
-      console.log(this.state)
+      console.log(this.state.perusahaan)
+    },
+    hapusPerusahaan: function({commit}, id){
+      commit('hapusPerusahaan', id)
+      alert(id)
     }
   },
 

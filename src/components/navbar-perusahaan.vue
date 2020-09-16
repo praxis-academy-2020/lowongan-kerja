@@ -12,15 +12,15 @@
       </v-btn>
     </router-link>
 
-    <router-link to="/tambah-lowongan">
+    <router-link to="/perusahaan/tambah-lowongan">
       <v-btn class="mr-2" outlined>
         <span>tambah lowongan</span>
       </v-btn>
     </router-link>
 
-    <router-link to="/perusahaan/tambah-edukasi">
+    <router-link to="/perusahaan/daftar-lowongan">
       <v-btn class="mr-2" outlined>
-        <span>tambah edukasi</span>
+        <span>daftar lowongan</span>
       </v-btn>
     </router-link>
   </v-app-bar>

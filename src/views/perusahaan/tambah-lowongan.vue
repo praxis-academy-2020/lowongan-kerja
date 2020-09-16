@@ -1,7 +1,6 @@
 <template>
   <div>
     <navbarPerusahaan />
-
     <form>
       <v-text-field label="Nama perusahaan" v-model="form.nama" required></v-text-field>
       <v-text-field label="Alamat perusahaan" v-model="form.alamat" required></v-text-field>
@@ -20,6 +19,7 @@ export default {
   data: () => {
     return {
       form: {
+        id: null,
         nama: "",
         alamat: "",
         lowongan: "",
@@ -30,6 +30,9 @@ export default {
   },
   methods: {
     save: function(){
+      this.$store.dispatch('tambahId')
+      this.form.id = this.$store.state.id;
+      console.log('vuex : ' + this.$store.state.id, 'state : ' + this.form.id)
       this.$store.dispatch('tambahPerusahaan', this.form);
     }
   },
