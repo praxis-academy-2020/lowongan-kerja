@@ -12,18 +12,36 @@
       
       </v-col>
       <v-col cols="3" >
-        
-        <v-card-text
-        class="warna"
-      >Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui.
-      </v-card-text>
+        <h3 class="warna">JOBDEV</h3><br>
+        <div class="warna">
+          <a href="#">Tentang Kami</a>
+        </div>
+        <div class="warna">
+          <a href="#">Bantuan</a>
+        </div>
+         <div class="warna">
+          <a href="#">Berkarir bersama Kami</a>
+        </div>
+        <div class="warna">
+          <a href="#">FAQ</a>
+        </div>
+      
       
       </v-col>
       <v-col cols="3" >
-        <v-card-text
-        class="warna"
-      >Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui.</v-card-text>
-      </v-col>
+        <h3 class="warna">PERUSAHAAN</h3><br>
+        <div class="warna">
+          <a href="#">Lowongan Kerja</a>
+        </div>
+        <div class="warna">
+          <a href="#">Edukasi</a>
+        </div>
+         <div class="warna">
+          <a href="#">Loker Klinik</a>
+        </div>
+       
+      
+       </v-col>
       <v-col cols="3" >
         <v-card-text
         class="warna"
@@ -51,5 +69,15 @@ export default {
 <style scoped>
 .warna{
   color:white ; 
+}
+.warna a{
+  
+  color:white ; 
+  text-decoration: none;
+}
+.warna a:hover{
+  
+  color:wheat ; 
+  text-decoration: none;
 }
 </style>

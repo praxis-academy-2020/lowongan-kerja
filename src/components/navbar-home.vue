@@ -1,6 +1,8 @@
 <template>
   <v-app-bar app color="primary" dark>
-    <div class="d-flex align-center">LokerDEV</div>
+    <router-link to="/">
+      <div class="d-flex align-center gmb">JOB DEV</div>
+    </router-link>
 
     <v-spacer></v-spacer>
 
@@ -28,5 +30,10 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+.gmb{
+  color: rgb(27, 233, 27);
+  font-size: 22px;
+  font-weight: bold;
+}
 </style>

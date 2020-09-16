@@ -1,8 +1,8 @@
 <template>
   <div>
-    <navbarPelamar/>
-    <h1>pelamar</h1>
+    <navbarPelamar></navbarPelamar>
   </div>
+  
 </template>
 
 <script>
@@ -12,7 +12,13 @@ import navbarPelamar from "@/components/navbar-pelamar.vue";
 
 export default {
   name: 'Pelamar',
+  data () {
+      return {
+        page: 1,
+      }
+    },
   components: {
+    
     navbarPelamar
   }
 }
