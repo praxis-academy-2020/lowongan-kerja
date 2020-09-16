@@ -26,14 +26,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/perusahaan.vue')
   },
   {
-    path: '/tambah-lowongan',
+    path: '/perusahaan/tambah-lowongan',
     name: 'Tambah-lowongan',
     component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/tambah-lowongan.vue')
   },
   {
-    path: '/perusahaan/tambah-edukasi',
+    path: '/perusahaan/daftar-lowongan',
     name: 'Tambah-edukasi',
-    component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/tambah-edukasi.vue')
+    component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/daftar-lowongan.vue')
   },
   {
     path: '/pelamar',
