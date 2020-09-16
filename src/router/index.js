@@ -26,6 +26,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/perusahaan.vue')
   },
   {
+    path: '/tambah-lowongan',
+    name: 'Tambah-lowongan',
+    component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/tambah-lowongan.vue')
+  },
+  {
     path: '/perusahaan/tambah-edukasi',
     name: 'Tambah-edukasi',
     component: () => import(/* webpackChunkName: "perusahaan" */ '../views/perusahaan/tambah-edukasi.vue')
@@ -44,6 +49,11 @@ const routes = [
     path: '/pelamar/klinik-pelamar',
     name: 'Klinik-pelamar',
     component: () => import(/* webpackChunkName: "detail" */ '../views/pelamar/klinik-pelamar')
+  },
+  {
+    path: '/pelamar/edukasi',
+    name: 'Edukasi',
+    component: () => import(/* webpackChunkName: "detail" */ '../views/pelamar/edukasi.vue')
   }
 ]
 

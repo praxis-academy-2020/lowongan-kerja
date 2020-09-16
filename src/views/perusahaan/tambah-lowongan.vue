@@ -1,0 +1,43 @@
+<template>
+  <div>
+    <navbarPerusahaan />
+
+    <form>
+      <v-text-field label="Nama perusahaan" v-model="form.nama" required></v-text-field>
+      <v-text-field label="Alamat perusahaan" v-model="form.alamat" required></v-text-field>
+      <v-text-field label="Nama lowongan" v-model="form.lowongan" required></v-text-field>
+      <v-text-field label="Syarat" v-model="form.syarat" required></v-text-field>
+      <v-textarea label="Deskripsi" v-model="form.deskripsi"></v-textarea>
+      <v-btn color="primary" @click="save()">Kirim</v-btn>
+    </form>
+  </div>
+</template>
+
+<script>
+import navbarPerusahaan from "@/components/navbar-perusahaan";
+
+export default {
+  data: () => {
+    return {
+      form: {
+        nama: "",
+        alamat: "",
+        lowongan: "",
+        syarat: "",
+        deskripsi: ""
+      }
+    };
+  },
+  methods: {
+    save: function(){
+      this.$store.dispatch('tambahPerusahaan', this.form);
+    }
+  },
+  components: {
+    navbarPerusahaan
+  }
+};
+</script>
+
+<style>
+</style>

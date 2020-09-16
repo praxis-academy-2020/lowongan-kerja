@@ -7,7 +7,6 @@ export default new Vuex.Store({
   state: {
     pelamar: [
       {
-        id: 1,
         nama: 'Walid',
         no_hp: "083010010010",
         email: 'walid@gmail.com',
@@ -17,20 +16,34 @@ export default new Vuex.Store({
     ],
     perusahaan: [
       {
-        id: 1,
         nama: 'Praxis',
-        alamat: 'sleman',
+        alamat: 'Sleman',
         deskripsi: 'blablabla',
         lowongan: 'Frontend',
         syarat: 'dibutuhkan yang ganteng'
+      },
+      {
+        nama: 'PT Makmur',
+        alamat: 'Jogja',
+        deskripsi: 'blablabla',
+        lowongan: 'fullstack javascript',
+        syarat: 'minimal lulusan sd'
       }
     ]
   },
 
   mutations: {
+    tambahPerusahaan: function(state, payload){
+        state.perusahaan.push(payload);
+    }
   },
 
   actions: {
+    tambahPerusahaan: function({commit}, payload){
+      commit('tambahPerusahaan', payload);
+      alert('ok')
+      console.log(this.state)
+    }
   },
 
   getters: {
