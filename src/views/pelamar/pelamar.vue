@@ -6,6 +6,7 @@
       <card :nama="item.nama" :lowongan="item.lowongan" :syarat="item.syarat" />
     </div>
   </div>
+  
 </template>
 
 <script>
