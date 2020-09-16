@@ -2,9 +2,16 @@
   <div>
     <navbarPelamar />
     <h1>pelamar</h1>
-    <div v-for="(item, index) in getPerusahaan" :key="index">
-      <card :nama="item.nama" :lowongan="item.lowongan" :syarat="item.syarat" :btnDetail="true" :route="item.id" />
-    </div>
+    <v-row>
+      
+          <v-col v-for="(item, index) in getPerusahaan" :key="index" cols="4">
+           <card :nama="item.nama" :lowongan="item.lowongan" :syarat="item.syarat" :btnDetail="true" :route="item.id" />
+      
+    </v-col>
+      
+    </v-row>
+    
+    
   </div>
 </template>
 

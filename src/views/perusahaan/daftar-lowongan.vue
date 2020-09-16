@@ -1,7 +1,8 @@
 <template>
   <div>
       <navbarPerusahaan/>
-    <div v-for="(item, index) in getPerusahaan" :key="index">
+      <v-row>
+            <v-col v-for="(item, index) in getPerusahaan" :key="index" cols="4">
         <cardPelamar
             :nama="item.nama"
             :lowongan="item.lowongan"
@@ -9,7 +10,13 @@
             :btn-del="true"
             :id="index"
         />
-    </div>
+       
+    </v-col>
+     
+      </v-row>
+  
+        
+
   </div>
 </template>
 

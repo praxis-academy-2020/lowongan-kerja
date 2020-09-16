@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container>
     <navbarPerusahaan />
     <form>
       <v-text-field label="Nama perusahaan" v-model="form.nama" required></v-text-field>
@@ -9,7 +9,7 @@
       <v-textarea label="Deskripsi" v-model="form.deskripsi"></v-textarea>
       <v-btn color="primary" @click="save()">Kirim</v-btn>
     </form>
-  </div>
+  </v-container>
 </template>
 
 <script>
