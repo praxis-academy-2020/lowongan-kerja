@@ -18,7 +18,7 @@
       </v-btn>
     </router-link>
 
-        <router-link to="/pelamar/edukasi">
+    <router-link to="/pelamar/edukasi">
       <v-btn class="mr-2" outlined>
         <span>Edukasi</span>
       </v-btn>
@@ -26,16 +26,20 @@
   </v-app-bar>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: "navbar"
 };
 </script>
 
 <style scoped>
-.gmb{
+.gmb {
   color: rgb(27, 233, 27);
   font-size: 22px;
   font-weight: bold;
+}
+
+a.router-link-exact-active span {
+  color: rgb(27, 233, 27);
 }
 </style>
