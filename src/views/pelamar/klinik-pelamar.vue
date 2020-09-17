@@ -1,15 +1,17 @@
 <template>
   <div>
     <navbarPelamar/>
+    <h1 class="text-center mt-5">KLINIK PELAMAR</h1>
     <v-row>
-      <v-col cols="6">
+      <v-col >
         <klinikk 
-    nama='review'
+    nama='Cek CV'
     />
       </v-col>
-      <v-col cols="6">
+
+      <v-col>
         <klinikk 
-    nama='interview'
+    nama='Cek Surat Lamaran'
     />
       </v-col>
     </v-row>
