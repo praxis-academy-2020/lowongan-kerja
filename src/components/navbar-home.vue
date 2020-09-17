@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex">
     <!-- small -->
     <v-navigation-drawer v-model="sideNav" absolute temporary>
       <v-list dense>
@@ -50,33 +50,36 @@
     </v-navigation-drawer>
 
     <!-- dekstop -->
-    <v-toolbar dark class="primary">
+    <v-toolbar dark class="justify-end primary">
       <router-link to="/">
         <v-toolbar-title class="align-center white--text font-weight-bold">JOB DEV</v-toolbar-title>
       </router-link>
 
       <v-spacer></v-spacer>
 
-      <v-toolbar-items class="hidden-xs-only">
-        <router-link to="/pelamar" class="text-decoration-none">
+      <v-toolbar-items class="justify-end align-center">
+        <router-link to="/pelamar" class="text-decoration-none hidden-xs-only">
           <v-btn class="mr-2" outlined>
+            <v-icon class="mr-2">mdi-account</v-icon>
             <span>Pelamar</span>
           </v-btn>
         </router-link>
 
-        <router-link to="/perusahaan" class="text-decoration-none">
+        <router-link to="/perusahaan" class="text-decoration-none hidden-xs-only">
           <v-btn class="mr-2" outlined>
+            <v-icon class="mr-2">mdi-office-building</v-icon>
             <span>Perusahaan</span>
           </v-btn>
         </router-link>
 
-        <router-link to="/tentang" class="text-decoration-none">
+        <router-link to="/tentang" class="text-decoration-none hidden-xs-only">
           <v-btn class="mr-2" outlined>
+            <v-icon class="mr-2">mdi-information</v-icon>
             <span>Tentang</span>
           </v-btn>
         </router-link>
       </v-toolbar-items>
-      <v-app-bar-nav-icon @click.native.stop="sideNav = !sideNav" class="hidden-sm-and-up"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.native.stop="sideNav = !sideNav" class="justify-end mr-2 hidden-sm-and-up"></v-app-bar-nav-icon>
     </v-toolbar>
   </div>
 </template>

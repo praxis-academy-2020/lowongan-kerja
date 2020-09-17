@@ -15,9 +15,9 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="success" text>Apply</v-btn>
+      <modalPelamar/>
       <router-link :to="`/pelamar/perusahaan/${route}`" v-show="btnDetail">
-        <v-btn color="primary" text>Detail</v-btn>
+        <v-btn color="primary" outlined text>Detail</v-btn>
       </router-link>
       <v-btn color="error" @click="del()" v-show="btnDel" text>Delete</v-btn>
     </v-card-actions>
@@ -25,7 +25,12 @@
 </template>
 
 <script>
+import modalPelamar from './modal-pelamar.vue'
+
 export default {
+  components: {
+    modalPelamar
+  },
   props: [
     "nama",
     "alamat",
