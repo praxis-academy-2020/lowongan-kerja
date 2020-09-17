@@ -10,6 +10,7 @@
           :syarat="item.syarat"
           :btn-del="true"
           :id="index"
+          :lamar="false"
         />
       </v-col>
     </v-row>

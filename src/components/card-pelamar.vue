@@ -15,7 +15,7 @@
     </v-card-text>
 
     <v-card-actions>
-      <modalPelamar/>
+      <modalPelamar v-show="lamar" />
       <router-link class="text-decoration-none" :to="`/pelamar/perusahaan/${route}`" v-show="btnDetail">
         <v-btn color="primary" class="ml-2" outlined text>Detail</v-btn>
       </router-link>
@@ -45,7 +45,8 @@ export default {
     "btnDel",
     "id",
     'route',
-    "btnDetail"
+    "btnDetail",
+    "lamar"
   ],
   methods: {
     del: function() {
