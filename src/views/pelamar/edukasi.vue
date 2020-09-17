@@ -1,27 +1,32 @@
 <template>
   <div>
+    <h1 class="text-center mt-5">EDUKASI</h1>
     <navbarPelamar/>
     <v-row>
-        <v-col cols="4"> 
+        <v-col > 
             <CardEdu
             judul='haha'
-            rating='15'
+            deskripsi='hauuu'
+
+            />
+        </v-col>
+        <v-col > 
+            <CardEdu
+            judul='haha'
             deskripsi='hauuu'
         
             />
         </v-col>
-        <v-col cols="4"> 
+        <v-col > 
             <CardEdu
             judul='haha'
-            rating='15'
             deskripsi='hauuu'
         
             />
         </v-col>
-        <v-col cols="4"> 
+        <v-col > 
             <CardEdu
             judul='haha'
-            rating='15'
             deskripsi='hauuu'
         
             />

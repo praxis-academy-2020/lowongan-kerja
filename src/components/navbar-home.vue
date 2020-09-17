@@ -11,7 +11,7 @@
 
         <v-divider></v-divider>
 
-        <router-link to="/perusahaan" class="text-decoration-none">
+        <router-link to="/pelamar" class="text-decoration-none">
           <v-list-item link>
             <v-list-item-icon>
               <v-icon>mdi-account</v-icon>

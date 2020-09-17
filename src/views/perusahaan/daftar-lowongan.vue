@@ -2,7 +2,7 @@
   <div>
       <navbarPerusahaan/>
       <v-row>
-            <v-col v-for="(item, index) in getPerusahaan" :key="index" cols="4">
+            <v-col v-for="(item, index) in getPerusahaan" :key="index" >
         <cardPelamar
             :nama="item.nama"
             :lowongan="item.lowongan"

@@ -24,8 +24,10 @@
       </v-col>
     </v-row>
 
-    <v-row class="mb-10">
-      <kerjaa />
+    <v-row class="mb-10 ml-15" >
+     <v-col >
+        <kerjaa />
+     </v-col>
     </v-row>
   </div>
 </template>
