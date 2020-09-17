@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center">
+  <div>
     <v-dialog v-model="dialog" persistent max-width="600px">
       <template v-slot:activator="{ on, attrs }">
         <v-btn color="success" outlined dark v-bind="attrs" v-on="on">Lamar</v-btn>
@@ -15,7 +15,19 @@
                 <v-text-field label="Nama lengkap*" required></v-text-field>
               </v-col>
               <v-col cols="12">
+                <v-text-field label="No. HP*" required></v-text-field>
+              </v-col>
+
+              <v-col cols="12">
                 <v-text-field label="Email*" required></v-text-field>
+              </v-col>
+
+              <v-col cols="12">
+                <v-text-field hint="Contoh : https://github.com/yourname" label="Akun github"></v-text-field>
+              </v-col>
+
+              <v-col cols="12">
+                <v-text-field hint="Contoh : https://instagram.com/yourname" label="Akun instagram"></v-text-field>
               </v-col>
               <v-col cols="12">
                 <v-textarea label="Surat lamaran*" type="text" required></v-textarea>
@@ -33,13 +45,7 @@
                   :show-size="1000"
                 >
                   <template v-slot:selection="{ index, text }">
-                    <v-chip
-                      v-if="index < 2"
-                      color="primary"
-                      dark
-                      label
-                      small
-                    >{{ text }}</v-chip>
+                    <v-chip v-if="index < 2" color="primary" dark label small>{{ text }}</v-chip>
 
                     <span
                       v-else-if="index === 2"
@@ -55,11 +61,11 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn color="error" text @click="dialog = false">Batal</v-btn>
-          <v-btn color="success" text @click="dialog = false">Kirirm</v-btn>
+          <v-btn color="success" text @click="dialog = false">Kirim</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </v-row>
+  </div>
 </template>
 
 <script>

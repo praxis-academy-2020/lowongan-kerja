@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex">
     <!-- small -->
-    <v-navigation-drawer v-model="sideNav" absolute temporary>
+    <v-navigation-drawer height="100%" v-model="sideNav" absolute temporary>
       <v-list dense>
         <v-list-item>
           <v-list-item-content>
@@ -52,7 +52,7 @@
     <!-- dekstop -->
     <v-toolbar dark class="justify-end primary">
       <router-link to="/">
-        <v-toolbar-title class="align-center white--text font-weight-bold">JOB DEV</v-toolbar-title>
+        <v-toolbar-title class="align-center white--text font-weight-bold">JOBDEV</v-toolbar-title>
       </router-link>
 
       <v-spacer></v-spacer>

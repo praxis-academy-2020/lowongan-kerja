@@ -3,31 +3,37 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      :src="foto"
     >
-      <v-card-title>{{nama}}</v-card-title>
+      <v-card-title class="text--primary">{{nama}}</v-card-title>
     </v-img>
 
     <v-card-text class="text--primary">
       <h1>{{lowongan}}</h1>
 
-      <div>{{syarat}}</div>
+      <div>{{alamat}}</div>
     </v-card-text>
 
     <v-card-actions>
       <modalPelamar/>
-      <router-link :to="`/pelamar/perusahaan/${route}`" v-show="btnDetail">
-        <v-btn color="primary" outlined text>Detail</v-btn>
+      <router-link class="text-decoration-none" :to="`/pelamar/perusahaan/${route}`" v-show="btnDetail">
+        <v-btn color="primary" class="ml-2" outlined text>Detail</v-btn>
       </router-link>
-      <v-btn color="error" @click="del()" v-show="btnDel" text>Delete</v-btn>
+      <v-btn color="error" class="ml-2" @click="del()" v-show="btnDel" text>Delete</v-btn>
     </v-card-actions>
   </v-card>
 </template>
 
 <script>
 import modalPelamar from './modal-pelamar.vue'
+import vue from "@/assets/logo.png";
 
 export default {
+  data: () => {
+    return {
+      foto: vue
+    }
+  },
   components: {
     modalPelamar
   },
@@ -36,7 +42,6 @@ export default {
     "alamat",
     "deskripsi",
     "lowongan",
-    "syarat",
     "btnDel",
     "id",
     'route',
