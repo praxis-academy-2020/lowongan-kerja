@@ -1,7 +1,7 @@
 <template>
   <v-main>
     <navbarHome />
-    <h1>Error not found</h1>
+    <v-img src="@/assets/404/404.png" class="mx-auto" width="800px"></v-img>
     <foot />
   </v-main>
 </template>

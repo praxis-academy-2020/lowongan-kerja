@@ -50,8 +50,8 @@
     </v-navigation-drawer>
 
     <!-- dekstop -->
-    <v-toolbar dark class="justify-end primary">
-      <router-link to="/">
+    <v-toolbar dark class="justify-end primary" >
+      <router-link class="text-decoration-none" to="/">
         <v-toolbar-title class="align-center white--text font-weight-bold">JOBDEV</v-toolbar-title>
       </router-link>
 

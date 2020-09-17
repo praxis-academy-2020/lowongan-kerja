@@ -1,6 +1,6 @@
 <template>
   <div class="mx-10">
-    <h2 class="text-center mb-5">PARTNER</h2>
+    <h1 class="text-center mb-5">PARTNER</h1>
     <v-row>
       <v-col>
         <v-img class="m-2" width="350" src="@/assets/kerjasama/lkpp.png"></v-img>
