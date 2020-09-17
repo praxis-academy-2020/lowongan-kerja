@@ -48,35 +48,32 @@
 <p class="text-center">SOFTWARE ENGINEER?</p>
 </div>
 
-<div class="tulisan">
-<p class="text-center ">Ikuti program ONLINE Job Fair JOBDEV.</p>
-<p class="text-center " > Pasang Lowongan Perusahaan Mu Disini! </p>
-</div>
-<v-btn class="center primary">Daftar sekarang</v-btn>
+    <div class="tulisan">
+      <p class="text-center">Ikuti program ONLINE Job Fair JOBDEV.</p>
+      <p class="text-center">Pasang Lowongan Perusahaan Mu Disini!</p>
     </div>
+    <router-link to="/perusahaan/tambah-lowongan">
+      <v-btn class="center primary">Daftar sekarang</v-btn>
+    </router-link>
+  </div>
 </template>
 <script>
 export default {
-    // props:['judul','deskripsi']   
-}
+  // props:['judul','deskripsi']
+};
 </script>
 <style scoped>
-
-  .center {
+.center {
   margin: 0;
   margin-top: 2%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
-
 }
-.tulis{
-    font-size: 50px;
+.tulis {
+  font-size: 50px;
 }
 .tulisan {
-    font-size: 18px;
+  font-size: 18px;
 }
-
-
 </style>

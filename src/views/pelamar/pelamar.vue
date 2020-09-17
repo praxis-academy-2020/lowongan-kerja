@@ -3,7 +3,7 @@
     <navbarPelamar />
     <h1 class="text-center mt-5">LOWONGAN KERJA</h1>
     <v-row>
-      <v-col v-for="(item, index) in getPerusahaan" :key="index">
+      <v-col v-for="(item, index) in getPerusahaan" :key="index" cols="12" sm="4">
         <card
           :nama="item.nama"
           :lowongan="item.lowongan"

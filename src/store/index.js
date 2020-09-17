@@ -53,12 +53,9 @@ export default new Vuex.Store({
     },
     tambahPerusahaan: function({commit}, payload){
       commit('tambahPerusahaan', payload);
-      alert('ok')
-      console.log(this.state.perusahaan)
     },
     hapusPerusahaan: function({commit}, id){
       commit('hapusPerusahaan', id)
-      alert(id)
     }
   },
 
