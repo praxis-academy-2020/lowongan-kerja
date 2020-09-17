@@ -95,7 +95,8 @@ export default {
 </script>
 
 <style scoped>
-a.router-link-exact-active span {
-  color: rgb(27, 233, 27);
+a.router-link-exact-active button {
+  color: #0288D1;
+  background-color: white;
 }
 </style>

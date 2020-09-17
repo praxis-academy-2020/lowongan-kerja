@@ -61,7 +61,7 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn color="error" text @click="dialog = false">Batal</v-btn>
-          <v-btn color="success" text @click="dialog = false">Kirim</v-btn>
+          <v-btn color="success" text @click="kirim()">Kirim</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -73,6 +73,15 @@ export default {
   data: () => ({
     dialog: false,
     files: []
-  })
+  }),
+  methods: {
+    kirim: function(){
+      this.dialog = false;
+      this.$swal({
+        icon: 'success',
+        title: 'Berhasil mengirim lamaran kerja'
+      })
+    }
+  }
 };
 </script>

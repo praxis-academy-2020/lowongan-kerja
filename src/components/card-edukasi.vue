@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-col>
-      <v-card class="mx-auto my-12" max-width="400">
+      <v-card class="mx-auto" max-width="400">
         <v-img height="100" src="@/assets/logo/logo8.png"></v-img>
         <v-card-title>{{judul}}</v-card-title>
         <v-card-title>Gratis</v-card-title>

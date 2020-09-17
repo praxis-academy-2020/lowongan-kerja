@@ -37,8 +37,11 @@ export default {
     save: function() {
       this.$store.dispatch("tambahId");
       this.form.id = this.$store.state.id;
-      console.log("vuex : " + this.$store.state.id, "state : " + this.form.id);
       this.$store.dispatch("tambahPerusahaan", this.form);
+      this.$swal({
+        icon: "success",
+        title: 'Berhasil menambah lowongan'
+      })
     }
   },
   components: {
