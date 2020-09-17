@@ -7,16 +7,19 @@
     <p>{{item[0].alamat}}</p>
     <p>{{item[0].deskripsi}}</p>
     <p>{{item[0].syarat}}</p>
+    <modalPelamar/>
   </div>
 </template>
 
 <script>
 import navbarPelamar from "@/components/navbar-pelamar";
+import modalPelamar from "@/components/modal-pelamar";
 import { mapGetters } from "vuex";
 
 export default {
   components: {
-    navbarPelamar
+    navbarPelamar,
+    modalPelamar
   },
   computed: {
     ...mapGetters(["getPerusahaan"]),
