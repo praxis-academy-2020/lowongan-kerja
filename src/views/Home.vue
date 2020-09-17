@@ -25,12 +25,26 @@
     </v-row>
 
     <v-divider></v-divider>
-
+    <h1 class="text-center mb-5">KATA MEREKA</h1>
+    
+    <v-row>
+      <v-col>
+        <tes/>
+        </v-col>
+        <v-col>
+        <tes/>
+        </v-col>
+        <v-col>
+        <tes/>
+        </v-col>
+    </v-row>
+    <v-divider class="mt-10"></v-divider>
     <v-row class="mb-10 mx-auto" >
      <v-col>
         <kerjaa />
      </v-col>
     </v-row>
+    
     <foot/>
   </v-main>
 </template>
@@ -41,7 +55,8 @@ import navbarHome from "../components/navbar-home.vue";
 import cardss from "@/components/home/card.vue";
 import kontakk from "@/components/home/kontak.vue";
 import kerjaa from "@/components/home/kerjasama.vue";
-import foot from "@/components/footer.vue"
+import tes from "@/components/home/testimoni.vue";
+import foot from "@/components/footer.vue";
 import j1 from "@/assets/jombroton/jombroton1.jpg";
 import j2 from "@/assets/jombroton/jombroton2.jpg";
 import j3 from "@/assets/jombroton/jombroton3.jpg";
@@ -69,7 +84,8 @@ export default {
     cardss,
     kontakk,
     kerjaa,
-    foot
+    foot,
+    tes
   }
 };
 </script>
