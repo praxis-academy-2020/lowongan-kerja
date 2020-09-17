@@ -11,17 +11,17 @@
 
         <v-col>
           <h3 class="warna mb-5">JOBDEV</h3>
-          <span class="warna">Tentang Kami</span>
-          <span class="warna">Bantuan</span>
-          <span class="warna">Berkarir bersama Kami</span>
-          <span class="warna">FAQ</span>
+          <p class="warna">Tentang Kami</p>
+          <p class="warna">Bantuan</p>
+          <p class="warna">Berkarir bersama Kami</p>
+          <p class="warna">FAQ</p>
         </v-col>
 
         <v-col>
           <h3 class="warna mb-5">PERUSAHAAN</h3>
-          <span class="warna">Lowongan Kerja</span>
-          <span class="warna">Edukasi</span>
-          <span class="warna">Loker Klinik</span>
+          <p class="warna">Lowongan Kerja</p>
+          <p class="warna">Edukasi</p>
+          <p class="warna">Loker Klinik</p>
         </v-col>
 
         <v-col class="hidden-xs-only">
