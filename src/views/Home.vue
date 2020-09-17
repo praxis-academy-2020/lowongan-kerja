@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-main>
     <navbarHome />
 
     <v-carousel class="mb-10" cycle height="400" hide-delimiter-background show-arrows-on-hover>
@@ -14,21 +14,25 @@
 
     <v-divider></v-divider>
 
-    <v-row class="mb-10">
+    <v-row class="mb-10 d-flex align-center">
       <v-col class="hidden-xs-only">
-        <v-img src="@/assets/kontak/orang.png" height="80%"></v-img>
+        <v-img src="@/assets/kontak/orang.png"></v-img>
       </v-col>
       <v-col class="mx-10">
         <h2 class="text-center mb-5">HUBUNGI KAMI</h2>
         <kontakk />
       </v-col>
     </v-row>
-    <v-row class="mb-10 ml-15" >
-     <v-col >
+
+    <v-divider></v-divider>
+
+    <v-row class="mb-10 mx-auto" >
+     <v-col>
         <kerjaa />
      </v-col>
     </v-row>
-  </div>
+    <foot/>
+  </v-main>
 </template>
 
 <script>
@@ -37,6 +41,7 @@ import navbarHome from "../components/navbar-home.vue";
 import cardss from "@/components/home/card.vue";
 import kontakk from "@/components/home/kontak.vue";
 import kerjaa from "@/components/home/kerjasama.vue";
+import foot from "@/components/footer.vue"
 import j1 from "@/assets/jombroton/jombroton1.jpg";
 import j2 from "@/assets/jombroton/jombroton2.jpg";
 import j3 from "@/assets/jombroton/jombroton3.jpg";
@@ -63,7 +68,8 @@ export default {
     navbarHome,
     cardss,
     kontakk,
-    kerjaa
+    kerjaa,
+    foot
   }
 };
 </script>

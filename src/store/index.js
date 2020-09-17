@@ -19,9 +19,9 @@ export default new Vuex.Store({
       {
         id: 0,
         nama: 'Praxis',
-        alamat: 'Sleman',
+        alamat: 'Yogyakarta, Sleman.',
         deskripsi: 'blablabla',
-        lowongan: 'Frontend',
+        lowongan: 'Frontend developer',
         syarat: 'dibutuhkan yang ganteng'
       },
       {

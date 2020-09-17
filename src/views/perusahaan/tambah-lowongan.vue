@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <v-main>
     <navbarPerusahaan />
-
+    <h1 class="text-center mt-5">TAMBAH LOWONGAN</h1>
     <v-container>
       <form>
         <v-text-field label="Nama perusahaan" v-model="form.nama" required></v-text-field>
@@ -12,11 +12,13 @@
         <v-btn color="primary" @click="save()">Kirim</v-btn>
       </form>
     </v-container>
-  </div>
+    <foot/>
+  </v-main>
 </template>
 
 <script>
 import navbarPerusahaan from "@/components/navbar-perusahaan";
+import foot from "@/components/footer.vue";
 
 export default {
   data: () => {
@@ -40,7 +42,8 @@ export default {
     }
   },
   components: {
-    navbarPerusahaan
+    navbarPerusahaan,
+    foot
   }
 };
 </script>
