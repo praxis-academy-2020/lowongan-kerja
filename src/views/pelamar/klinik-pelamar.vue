@@ -3,12 +3,16 @@
     <navbarPelamar />
     <h1 class="text-center mt-5">KLINIK PELAMAR</h1>
     <v-row>
-      <v-col>
+      <v-col cols="12" sm="6" md="4">
         <klinikk nama="Cek CV" />
       </v-col>
 
-      <v-col>
+      <v-col cols="12" sm="6" md="4">
         <klinikk nama="Cek Surat Lamaran" />
+      </v-col>
+
+      <v-col cols="12" sm="6" md="4">
+        <klinikk nama="Cek Portofolio" />
       </v-col>
     </v-row>
     <foot/>

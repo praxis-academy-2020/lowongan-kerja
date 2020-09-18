@@ -2,18 +2,20 @@
   <div>
     <v-col>
       <v-card class="mx-auto" max-width="400">
-        <v-img height="100" src="@/assets/logo/logo8.png"></v-img>
+        <v-img height="100" :src="poto"></v-img>
         <v-card-title>{{judul}}</v-card-title>
         <v-card-title>Gratis</v-card-title>
         <div class="ml-4">{{deskripsi}}</div>
-        <v-btn class="primary mb-3 center">Unduh</v-btn>
+        
+         <a :href="link" target="_blank" class="text-decoraton-none" ><v-btn color="primary" class="mx-auto center">BACA</v-btn></a> 
+     
       </v-card>
     </v-col>
   </div>
 </template>
 <script>
 export default {
-  props: ["judul", "deskripsi"]
+  props: ["judul", "deskripsi", "link", "poto"]
 };
 </script>
 <style scoped>
