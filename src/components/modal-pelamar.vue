@@ -2,7 +2,7 @@
   <div>
     <v-dialog v-model="dialog" persistent max-width="600px">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn color="success" outlined dark v-bind="attrs" v-on="on">Lamar</v-btn>
+        <v-btn color="success"  dark v-bind="attrs" v-on="on">Lamar</v-btn>
       </template>
       <v-card>
         <v-card-title>
@@ -61,7 +61,7 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn color="error" text @click="dialog = false">Batal</v-btn>
-          <v-btn color="success" text @click="kirim()">Kirim</v-btn>
+          <v-btn color="success"  text @click="kirim()">Kirim</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -79,7 +79,8 @@ export default {
       this.dialog = false;
       this.$swal({
         icon: 'success',
-        title: 'Berhasil mengirim lamaran kerja'
+        title: 'Berhasil mengirim lamaran kerja',
+        
       })
     }
   }

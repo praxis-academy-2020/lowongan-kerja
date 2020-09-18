@@ -36,7 +36,7 @@
 
       <v-row class="d-flex justify-center">
         <router-link to="/pelamar" class="text-decoration-none">
-          <v-btn color="error" outlined class="mr-2">Batal</v-btn>
+          <v-btn color="error"  class="mr-2">Batal</v-btn>
         </router-link>
         <modalPelamar />
       </v-row>

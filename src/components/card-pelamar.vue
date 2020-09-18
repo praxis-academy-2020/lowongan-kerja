@@ -13,7 +13,7 @@
     <v-card-actions>
       <modalPelamar v-show="lamar" />
       <router-link class="text-decoration-none" :to="`/pelamar/perusahaan/${route}`" v-show="btnDetail">
-        <v-btn color="primary" class="ml-2" outlined text>Detail</v-btn>
+        <v-btn color="primary" class="ml-2"  text>Detail</v-btn>
       </router-link>
       <v-btn color="error" class="ml-2" @click="del()" v-show="btnDel" text>Hapus</v-btn>
     </v-card-actions>

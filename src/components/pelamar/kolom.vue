@@ -18,7 +18,7 @@
         <P class="text-center">Pasang Lowongan Perusahaan Mu Disini!</P>
       </v-col>
     </v-row>
-
+  
     <v-row class="mb-10 d-flex">
       <v-col class="d-flex align-content-center">
         <v-img src="@/assets/perusahaan/2.png" height="400px" width="700px"></v-img>
