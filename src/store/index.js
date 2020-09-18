@@ -19,16 +19,16 @@ export default new Vuex.Store({
       {
         id: 0,
         nama: 'Praxis',
-        alamat: 'Yogyakarta, Sleman.',
-        deskripsi: 'blablabla',
+        alamat: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. ',
+        deskripsi: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam labore reiciendis, facilis nisi doloribus libero ea sit ut rem itaque cum adipisci sequi a culpa quisquam fugiat praesentium odio repellat  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam labore reiciendis, facilis nisi doloribus libero ea sit ut rem itaque cum adipisci sequi a culpa quisquam fugiat praesentium odio repellat  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam labore reiciendis, facilis nisi doloribus libero ea sit ut rem itaque cum adipisci sequi a culpa quisquam fugiat praesentium odio repellat.',
         lowongan: 'Frontend developer',
         syarat: 'dibutuhkan yang ganteng'
       },
       {
         id: 1,
         nama: 'PT Makmur',
-        alamat: 'Jogja',
-        deskripsi: 'blablabla',
+        alamat: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. ',
+        deskripsi: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam labore reiciendis, facilis nisi doloribus libero ea sit ut rem itaque cum adipisci sequi a culpa quisquam fugiat praesentium odio repellat  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam labore reiciendis, facilis nisi doloribus libero ea sit ut rem itaque cum adipisci sequi a culpa quisquam fugiat praesentium odio repellat  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam labore reiciendis, facilis nisi doloribus libero ea sit ut rem itaque cum adipisci sequi a culpa quisquam fugiat praesentium odio repellat.',
         lowongan: 'fullstack javascript',
         syarat: 'minimal lulusan sd'
       }

@@ -7,27 +7,30 @@
         <v-col cols="12" sm="4">
           <v-img :src="foto" />
         </v-col>
-        <v-col class="text-center" cols="12" sm="8">
-          <h1>{{item[0].nama}}</h1>
-          <p>Alamat : {{item[0].alamat}}</p>
+        <v-col class="text-center d-flex align-self-center" cols="12" sm="8">
+          <div>
+            <h1>{{item[0].nama}}</h1>
+          <p><strong>Alamat : </strong>{{item[0].alamat}}</p>
+        
+          </div>
+          </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col>
+          <p><strong>Deskripsi : </strong>{{item[0].deskripsi}}</p>
         </v-col>
       </v-row>
 
       <v-row>
         <v-col>
-          <p>Deskripsi : {{item[0].deskripsi}}</p>
+          <p><strong>Lowongan : </strong>{{item[0].lowongan}}</p>
         </v-col>
       </v-row>
 
       <v-row>
         <v-col>
-          <p>Lowongan : {{item[0].lowongan}}</p>
-        </v-col>
-      </v-row>
-
-      <v-row>
-        <v-col>
-          <p>Syarat : {{item[0].syarat}}</p>
+          <p><strong>Syarat : </strong>{{item[0].syarat}}</p>
         </v-col>
       </v-row>
 

@@ -28,7 +28,11 @@ export default {
   props: ["nama"],
   methods: {
     kirim: function(){
-      this.$swal("Termakasih")
+      this.$swal({
+        icon: 'success',
+        title: 'Berkas Anda Telah Terkirim',
+        text: 'Silahkan Cek Email'
+      })
     }
   }
 };

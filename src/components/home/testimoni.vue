@@ -21,7 +21,7 @@
         ></v-rating>
       </div>
     </v-card-text>
-   
+  
   </v-card>
 </div>
   
