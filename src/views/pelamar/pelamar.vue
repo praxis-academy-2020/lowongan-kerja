@@ -10,6 +10,7 @@
           :alamat="item.alamat"
           :btnDetail="true"
           :route="item.id"
+          :lamar="true"
         />
       </v-col>
     </v-row>
